@@ -1,0 +1,32 @@
+{
+  "name": "freehand",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "gulp sass:watch",
+    "watch": "gulp watch",
+    "sass": "gulp sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alqae/freehand.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alqae/freehand/issues"
+  },
+  "homepage": "https://github.com/alqae/freehand#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.7"
+  }
+}
