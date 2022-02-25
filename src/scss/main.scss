@@ -1,12 +1,4 @@
 @import "variables";
+@import "mixins";
+@import "utils";
 @import "fonts";
-
-h1 {
-  color: red;
-  font-family: $font-primary;
-}
-
-p {
-  color: blue;
-  font-family: $font-primary;
-}
