@@ -1,2 +1,37 @@
-body {
-  background-color: blue; }
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Black.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Light.ttf) format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Medium.ttf);
+  font-weight: 500;
+  font-style: normal; }
+
+h1 {
+  color: red;
+  font-family: "Roboto"; }
+
+p {
+  color: blue;
+  font-family: "Roboto"; }
