@@ -18,6 +18,7 @@ header {
 
             a {
                 text-decoration: none;
+                color: $darkBlue;
                 font-family: $font-primary;
                 font-size: 16px;
                 font-style: normal;
@@ -31,8 +32,31 @@ header {
 }
 
 hr {
-    background-color: $ligthGrey;
+    background-color: $ligthGray;
     height: 1px;
     border: 0;
     margin: 0;
+}
+
+button {
+    border-radius: 8px;
+    border: 2px solid $darkBlue;
+    font-weight: 500;
+    padding: 15px 35px;
+
+    &.primary {
+        background-color: $darkBlue;
+        color: white;
+    }
+
+    &.secondary {
+        background-color: white;
+        color: $darkBlue;
+    }
+}
+
+.actions {
+    button:first-child {
+        margin-right: 18px;
+    }
 }

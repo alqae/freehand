@@ -95,6 +95,7 @@ header {
       margin: 0 10px; }
       header nav ul li a {
         text-decoration: none;
+        color: #16133D;
         font-family: "Roboto";
         font-size: 16px;
         font-style: normal;
@@ -108,3 +109,18 @@ hr {
   height: 1px;
   border: 0;
   margin: 0; }
+
+button {
+  border-radius: 8px;
+  border: 2px solid #16133D;
+  font-weight: 500;
+  padding: 15px 35px; }
+  button.primary {
+    background-color: #16133D;
+    color: white; }
+  button.secondary {
+    background-color: white;
+    color: #16133D; }
+
+.actions button:first-child {
+  margin-right: 18px; }
