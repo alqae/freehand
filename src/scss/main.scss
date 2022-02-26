@@ -3,3 +3,36 @@
 @import "mixins";
 @import "utils";
 @import "fonts";
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 44px 0;
+
+    nav ul {
+        display: flex;
+
+        li {
+            margin: 0 10px;
+
+            a {
+                text-decoration: none;
+                font-family: $font-primary;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 16px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+        }
+    }
+}
+
+hr {
+    background-color: $ligthGrey;
+    height: 1px;
+    border: 0;
+    margin: 0;
+}
