@@ -4,6 +4,15 @@
 @import "utils";
 @import "fonts";
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-primary;
+    padding-bottom: 15vh;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -19,13 +28,9 @@ header {
             a {
                 text-decoration: none;
                 color: $darkBlue;
-                font-family: $font-primary;
                 font-size: 16px;
-                font-style: normal;
                 font-weight: 500;
                 line-height: 16px;
-                letter-spacing: 0em;
-                text-align: left;
             }
         }
     }
@@ -75,7 +80,6 @@ button {
             width: 477px;
             height: 204px;
             position: relative;
-            font-family: $font-primary;
             font-weight: 600;
             font-size: 56px;
             line-height: 68px;
@@ -87,13 +91,9 @@ button {
             position: relative;
             margin-top: 20px;
             margin-bottom: 30px;
-            font-family: $font-primary;
             font-size: 19px;
-            font-style: normal;
             font-weight: 400;
             line-height: 36px;
-            letter-spacing: 0em;
-            text-align: left;
         }
 
         &-actions {
@@ -122,5 +122,74 @@ button {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+}
+
+.experience {
+    margin-top: 200px;
+
+    span {
+        color: $darkGray;
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 17px;
+        display: inline-block;
+    }
+
+    h3 {
+        font-size: 40px;
+        margin-bottom: 6px;
+        line-height: 28px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    &__cards {
+        display: flex;
+        gap: 45px;
+        margin-top: 60px;
+
+        .card {
+            padding: 41px;
+            border-radius: 8px;
+            border: 1px solid $ligthGray;
+
+            &__icon {
+                width: 64px;
+                height: 64px;
+                padding: 16px;
+                border: 1px solid $ligthGray;
+                border-radius: 26px;
+
+                img {
+                    width: 100%;
+                    max-height: 100%;
+                }
+            }
+
+            &__title {
+                font-size: 24px;
+                line-height: 21px;
+                margin-top: 28px;
+                margin-bottom: 14px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 28px;
+            }
+
+            a {
+                margin-top: 29px;
+                font-size: 16px;
+                display: inline-block;
+                line-height: 18px;
+                color: black;
+                text-decoration: none;
+            }
+        }
     }
 }
