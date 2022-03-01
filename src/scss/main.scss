@@ -8,13 +8,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 44px 0;
+    margin: 45px 0;
 
     nav ul {
         display: flex;
 
         li {
-            margin: 0 10px;
+            margin: 0 30.5px;
 
             a {
                 text-decoration: none;
@@ -43,6 +43,7 @@ button {
     border: 2px solid $darkBlue;
     font-weight: 500;
     padding: 15px 35px;
+    cursor: pointer;
 
     &.primary {
         background-color: $darkBlue;
@@ -58,5 +59,68 @@ button {
 .actions {
     button:first-child {
         margin-right: 18px;
+    }
+}
+
+.banner {
+    display: flex;
+    margin-top: 45px;
+
+    &__half {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            width: 477px;
+            height: 204px;
+            position: relative;
+            font-family: $font-primary;
+            font-weight: 600;
+            font-size: 56px;
+            line-height: 68px;
+            letter-spacing: 0.2px;
+            color: $darkBlue;
+        }
+
+        span {
+            position: relative;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            font-family: $font-primary;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        &-actions {
+            button {
+                border-color: $blue;
+
+                &.primary {
+                    background-color: $blue;
+                    color: white;
+                }
+
+                &.secondary {
+                    background-color: white;
+                    color: $blue;
+                }
+            }
+
+            button:first-child {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &__slider {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }

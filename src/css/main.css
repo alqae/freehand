@@ -88,11 +88,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 44px 0; }
+  margin: 45px 0; }
   header nav ul {
     display: flex; }
     header nav ul li {
-      margin: 0 10px; }
+      margin: 0 30.5px; }
       header nav ul li a {
         text-decoration: none;
         color: #16133D;
@@ -114,7 +114,8 @@ button {
   border-radius: 8px;
   border: 2px solid #16133D;
   font-weight: 500;
-  padding: 15px 35px; }
+  padding: 15px 35px;
+  cursor: pointer; }
   button.primary {
     background-color: #16133D;
     color: white; }
@@ -124,3 +125,47 @@ button {
 
 .actions button:first-child {
   margin-right: 18px; }
+
+.banner {
+  display: flex;
+  margin-top: 45px; }
+  .banner__half {
+    width: 50%;
+    display: flex;
+    flex-direction: column; }
+    .banner__half h1 {
+      width: 477px;
+      height: 204px;
+      position: relative;
+      font-family: "Roboto";
+      font-weight: 600;
+      font-size: 56px;
+      line-height: 68px;
+      letter-spacing: 0.2px;
+      color: #16133D; }
+    .banner__half span {
+      position: relative;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-family: "Roboto";
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: left; }
+    .banner__half-actions button {
+      border-color: #007FFC; }
+      .banner__half-actions button.primary {
+        background-color: #007FFC;
+        color: white; }
+      .banner__half-actions button.secondary {
+        background-color: white;
+        color: #007FFC; }
+    .banner__half-actions button:first-child {
+      margin-right: 20px; }
+  .banner__slider {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
