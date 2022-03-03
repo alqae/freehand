@@ -139,7 +139,6 @@ hr {
       width: 477px;
       height: 204px;
       position: relative;
-      font-weight: 600;
       font-size: 56px;
       line-height: 68px;
       letter-spacing: 0.2px;
@@ -149,7 +148,6 @@ hr {
       margin-top: 20px;
       margin-bottom: 30px;
       font-size: 19px;
-      font-weight: 400;
       line-height: 36px; }
     .banner__half-actions button {
       border-radius: 8px;
@@ -353,6 +351,34 @@ hr {
     text-align: center; }
   .triall__button {
     margin-top: 48px;
-    display: inline-block;
-    text-align: center;
-    gap: 50px; }
+    text-align: center; }
+    .triall__button :nth-child(1) {
+      width: 185px;
+      height: 48px;
+      font-size: 16px;
+      line-height: 19px;
+      color: #183b56;
+      margin-right: 20px;
+      background: #ffffff;
+      border-radius: 50px;
+      box-sizing: border-box; }
+    .triall__button :nth-child(2) {
+      width: 185px;
+      height: 48px;
+      font-size: 16px;
+      line-height: 18px;
+      color: white;
+      background: #007FFC;
+      border-color: white;
+      border-radius: 50px;
+      border: 2px solid #ffffff;
+      box-sizing: border-box; }
+
+footer {
+  margin-top: 200px;
+  width: 1440px;
+  height: 573px;
+  background: #16133D; }
+  footer .content {
+    display: flex;
+    justify-content: space-around; }
