@@ -106,25 +106,24 @@ header {
         font-size: 16px;
         font-weight: 500;
         line-height: 16px; }
+  header button {
+    border-radius: 8px;
+    border: 2px solid #16133D;
+    font-weight: 500;
+    padding: 15px 35px;
+    cursor: pointer; }
+    header button.primary {
+      background-color: #16133D;
+      color: white; }
+    header button.secondary {
+      background-color: white;
+      color: #16133D; }
 
 hr {
   background-color: #EFEEF3;
   height: 1px;
   border: 0;
   margin: 0; }
-
-button {
-  border-radius: 8px;
-  border: 2px solid #16133D;
-  font-weight: 500;
-  padding: 15px 35px;
-  cursor: pointer; }
-  button.primary {
-    background-color: #16133D;
-    color: white; }
-  button.secondary {
-    background-color: white;
-    color: #16133D; }
 
 .actions button:first-child {
   margin-right: 18px; }
@@ -153,7 +152,11 @@ button {
       font-weight: 400;
       line-height: 36px; }
     .banner__half-actions button {
-      border-color: #007FFC; }
+      border-radius: 8px;
+      border: 2px solid #007FFC;
+      font-weight: 500;
+      padding: 15px 35px;
+      cursor: pointer; }
       .banner__half-actions button.primary {
         background-color: #007FFC;
         color: white; }
@@ -176,7 +179,7 @@ button {
     line-height: 21px;
     margin-bottom: 17px;
     display: inline-block; }
-  .experience h3 {
+  .experience h2 {
     font-size: 40px;
     margin-bottom: 6px;
     line-height: 28px; }
@@ -215,3 +218,141 @@ button {
         line-height: 18px;
         color: black;
         text-decoration: none; }
+
+.features {
+  margin-top: 119px; }
+  .features span {
+    color: #7690A8;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 17px;
+    display: inline-block; }
+  .features h4 {
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 7px; }
+  .features p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #7690A8;
+    margin-bottom: 85px; }
+  .features__cards {
+    display: flex;
+    gap: 49px; }
+    .features__cards .card {
+      width: 553px;
+      height: 483px;
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden; }
+      .features__cards .card__img {
+        width: 100;
+        max-height: 100%; }
+      .features__cards .card p {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+        font-size: 36px;
+        line-height: 48px;
+        color: whitesmoke;
+        letter-spacing: 0.2px;
+        margin: 48px; }
+
+.pricing {
+  margin-top: 201px; }
+  .pricing__content {
+    margin-bottom: 85px; }
+    .pricing__content h5 {
+      font-size: 40px;
+      line-height: 52px;
+      margin-bottom: 7px; }
+    .pricing__content p {
+      font-size: 18px;
+      line-height: 28px;
+      color: #7690A8; }
+  .pricing__cards {
+    display: flex;
+    gap: 30px; }
+    .pricing__cards .card {
+      width: 360px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.03);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top: solid 3px;
+      text-align: center; }
+      .pricing__cards .card__title {
+        margin-top: 50px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0.2px; }
+      .pricing__cards .card__price {
+        margin-top: 32px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 52px;
+        letter-spacing: 0.2px; }
+      .pricing__cards .card span {
+        display: inline-block;
+        margin-top: 5px;
+        font-size: 16px;
+        color: #7690A8;
+        line-height: 24px; }
+      .pricing__cards .card p {
+        margin-top: 35px;
+        font-size: 16px;
+        line-height: 28px;
+        color: #7690A8; }
+      .pricing__cards .card button {
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        margin-top: 56px;
+        width: 171px;
+        height: 48px;
+        border: 2px solid #16133d;
+        border-radius: 50px; }
+      .pricing__cards .card__primary {
+        border-color: #007FFC; }
+        .pricing__cards .card__primary .card__price {
+          color: #007FFC; }
+      .pricing__cards .card__secondary {
+        border-color: #52C29D; }
+        .pricing__cards .card__secondary .card__price {
+          color: #52C29D; }
+      .pricing__cards .card__terciary {
+        border-color: #F04D5D; }
+        .pricing__cards .card__terciary .card__price {
+          color: #F04D5D; }
+        .pricing__cards .card__terciary button {
+          color: white;
+          background: #16133D; }
+
+.triall {
+  margin-top: 200px; }
+  .triall__content {
+    background: url(../assets/imgs/trial_bg.png);
+    height: 380px;
+    width: 1150px;
+    border-radius: 20px;
+    text-align: center; }
+  .triall span {
+    display: inline-block;
+    margin-top: 90px;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    color: white; }
+  .triall p {
+    margin-top: 28px;
+    font-size: 18px;
+    color: #ffffff99;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center; }
+  .triall__button {
+    margin-top: 48px;
+    display: inline-block;
+    text-align: center;
+    gap: 50px; }

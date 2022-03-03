@@ -34,6 +34,24 @@ header {
             }
         }
     }
+
+    button {
+        border-radius: 8px;
+        border: 2px solid $darkBlue;
+        font-weight: 500;
+        padding: 15px 35px;
+        cursor: pointer;
+
+        &.primary {
+            background-color: $darkBlue;
+            color: white;
+        }
+
+        &.secondary {
+            background-color: white;
+            color: $darkBlue;
+        }
+    }
 }
 
 hr {
@@ -41,24 +59,6 @@ hr {
     height: 1px;
     border: 0;
     margin: 0;
-}
-
-button {
-    border-radius: 8px;
-    border: 2px solid $darkBlue;
-    font-weight: 500;
-    padding: 15px 35px;
-    cursor: pointer;
-
-    &.primary {
-        background-color: $darkBlue;
-        color: white;
-    }
-
-    &.secondary {
-        background-color: white;
-        color: $darkBlue;
-    }
 }
 
 .actions {
@@ -98,7 +98,11 @@ button {
 
         &-actions {
             button {
-                border-color: $blue;
+                border-radius: 8px;
+                border: 2px solid $blue;
+                font-weight: 500;
+                padding: 15px 35px;
+                cursor: pointer;
 
                 &.primary {
                     background-color: $blue;
@@ -136,7 +140,7 @@ button {
         display: inline-block;
     }
 
-    h3 {
+    h2 {
         font-size: 40px;
         margin-bottom: 6px;
         line-height: 28px;
@@ -192,4 +196,207 @@ button {
             }
         }
     }
+}
+
+.features {
+    margin-top: 119px;
+
+    span {
+        color: $darkGray;
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 17px;
+        display: inline-block;
+    }
+
+    h4 {
+        font-size: 40px;
+        line-height: 52px;
+        margin-bottom: 7px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 28px;
+        color: $darkGray;
+        margin-bottom: 85px;
+    }
+
+    &__cards {
+        display: flex;
+        gap: 49px;
+
+        .card {
+            width: 553px;
+            height: 483px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+
+            &__img {
+                width: 100;
+                max-height: 100%;
+            }
+
+            p {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                z-index: 10;
+                font-size: 36px;
+                line-height: 48px;
+                color: whitesmoke;
+                letter-spacing: 0.2px;
+                margin: 48px;
+            }
+        }
+    }
+}
+
+.pricing {
+    margin-top: 201px;
+
+    &__content {
+        margin-bottom: 85px;
+
+        h5 {
+            font-size: 40px;
+            line-height: 52px;
+            margin-bottom: 7px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            color: $darkGray;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        gap: 30px;
+
+        .card {
+            width: 360px;
+            box-shadow: 0 10px 35px rgba($color: #000000, $alpha: 0.03);
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-top: solid 3px;
+            text-align: center;
+
+            &__title {
+                margin-top: 50px;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0.2px;
+            }
+
+            &__price {
+                margin-top: 32px;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 52px;
+                letter-spacing: 0.2px;
+            }
+
+            span {
+                display: inline-block;
+                margin-top: 5px;
+                font-size: 16px;
+                color: $darkGray;
+                line-height: 24px;
+            }
+
+            p {
+                margin-top: 35px;
+                font-size: 16px;
+                line-height: 28px;
+                color: $darkGray;
+            }
+
+            button {
+                border: none;
+                background: transparent;
+                box-shadow: none;
+
+                margin-top: 56px;
+                width: 171px;
+                height: 48px;
+                border: 2px solid #16133d;
+                border-radius: 50px;
+            }
+
+            &__primary {
+                border-color: $blue;
+
+                .card__price {
+                    color: $blue;
+                }
+            }
+
+            &__secondary {
+                border-color: $green;
+
+                .card__price {
+                    color: $green;
+                }
+            }
+
+            &__terciary {
+                border-color: $red;
+
+                .card__price {
+                    color: $red;
+                }
+
+                button {
+                    color: white;
+                    background: $darkBlue;
+                }
+            }
+        }
+    }
+}
+
+.triall {
+    margin-top: 200px;
+
+    &__content {
+        background: url(../assets/imgs/trial_bg.png);
+        height: 380px;
+        width: 1150px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    span {
+        display: inline-block;
+        margin-top: 90px;
+        font-size: 40px;
+        line-height: 52px;
+        letter-spacing: 0.2px;
+        color: white;
+    }
+
+    p {
+        margin-top: 28px;
+        font-size: 18px;
+        color: #ffffff99;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: center;
+       
+    }
+
+    &__button {
+
+        margin-top:  48px; 
+        display: inline-block;
+        text-align: center;
+        gap: 50px;
+          
+    }
+
+    
 }
