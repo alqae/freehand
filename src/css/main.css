@@ -35,23 +35,23 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.container {
+.container, footer .content {
   position: relative;
   margin: 0 auto;
   padding-right: 1rem;
   padding-left: 1rem;
   width: 100%; }
   @media (min-width: 36em) {
-    .container {
+    .container, footer .content {
       max-width: 540px; } }
   @media (min-width: 48em) {
-    .container {
+    .container, footer .content {
       max-width: 720px; } }
   @media (min-width: 62em) {
-    .container {
+    .container, footer .content {
       max-width: 960px; } }
   @media (min-width: 75em) {
-    .container {
+    .container, footer .content {
       max-width: 1140px; } }
 
 @font-face {
@@ -88,8 +88,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: "Roboto";
-  padding-bottom: 15vh; }
+  font-family: "Roboto"; }
 
 header {
   display: flex;
@@ -307,6 +306,7 @@ hr {
         background: transparent;
         box-shadow: none;
         margin-top: 56px;
+        margin-bottom: 50px;
         width: 171px;
         height: 48px;
         border: 2px solid #16133d;
@@ -327,32 +327,32 @@ hr {
           color: white;
           background: #16133D; }
 
-.triall {
+.trial {
   margin-top: 200px; }
-  .triall__content {
+  .trial__content {
     background: url(../assets/imgs/trial_bg.png);
     height: 380px;
     width: 1150px;
     border-radius: 20px;
     text-align: center; }
-  .triall span {
+  .trial span {
     display: inline-block;
     margin-top: 90px;
     font-size: 40px;
     line-height: 52px;
     letter-spacing: 0.2px;
     color: white; }
-  .triall p {
+  .trial p {
     margin-top: 28px;
     font-size: 18px;
     color: #ffffff99;
     line-height: 32px;
     letter-spacing: 0em;
     text-align: center; }
-  .triall__button {
+  .trial__button {
     margin-top: 48px;
     text-align: center; }
-    .triall__button :nth-child(1) {
+    .trial__button :nth-child(1) {
       width: 185px;
       height: 48px;
       font-size: 16px;
@@ -361,8 +361,9 @@ hr {
       margin-right: 20px;
       background: #ffffff;
       border-radius: 50px;
-      box-sizing: border-box; }
-    .triall__button :nth-child(2) {
+      box-sizing: border-box;
+      border-color: transparent; }
+    .trial__button :nth-child(2) {
       width: 185px;
       height: 48px;
       font-size: 16px;
@@ -376,9 +377,76 @@ hr {
 
 footer {
   margin-top: 200px;
-  width: 1440px;
-  height: 573px;
-  background: #16133D; }
+  background: #16133D;
+  text-align: center;
+  padding-bottom: 70px; }
   footer .content {
+    text-align: left;
+    padding-top: 90px;
+    padding-bottom: 150px;
     display: flex;
     justify-content: space-around; }
+    footer .content__social__logo {
+      width: 182px;
+      height: 35px; }
+    footer .content__social p {
+      margin-top: 43px;
+      width: 285px;
+      height: 84px;
+      font-size: 16px;
+      line-height: 28px;
+      color: white; }
+    footer .content__social__icon {
+      margin-top: 58px; }
+      footer .content__social__icon ul {
+        display: flex;
+        gap: 8px; }
+        footer .content__social__icon ul li {
+          display: inline-block; }
+          footer .content__social__icon ul li a {
+            display: block;
+            width: 38px;
+            height: 38px;
+            padding: 9px;
+            box-sizing: border-box;
+            background: white;
+            border-radius: 10px;
+            color: black; }
+            footer .content__social__icon ul li a img {
+              height: 100%;
+              width: 100%; }
+    footer .content__services p, footer .content__company p, footer .content__contact p {
+      margin-top: 40px;
+      width: 285px;
+      font-size: 16px;
+      line-height: 28px;
+      color: white; }
+    footer .content__services span, footer .content__company span, footer .content__contact span {
+      color: white;
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 2px; }
+    footer .content__services > a, footer .content__company > a, footer .content__contact > a {
+      display: inline-block;
+      margin-top: 19px;
+      font-size: 25px;
+      color: white;
+      text-decoration: none; }
+    footer .content__services ul, footer .content__company ul, footer .content__contact ul {
+      margin-top: 38px; }
+      footer .content__services ul li a, footer .content__company ul li a, footer .content__contact ul li a {
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 15px;
+        line-height: 17px;
+        text-decoration: none;
+        color: white; }
+    footer .content .sponsors {
+      margin-top: 28px;
+      display: flex;
+      gap: 30px; }
+  footer > span {
+    font-size: 16px;
+    line-height: 28px;
+    color: white; }
